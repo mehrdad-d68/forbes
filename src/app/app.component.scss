@@ -1,0 +1,264 @@
+
+
+.navbar{
+    position: relative;
+    width: 100%;
+    z-index: 10;
+    float: left;
+    margin-top: -50px;
+}
+.nav{
+    background-color: black;
+    overflow: hidden;
+    position:fixed ;
+    width: 100%;
+    
+
+}
+.btn{
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+    span{
+        
+        display: none;
+        font-size: 20px;
+        color: white;
+    }
+    .btnmenu {
+        cursor: pointer;
+        font-size: 20px;
+        background-color: black;
+        border: none;
+        color: white;
+    }
+    .btnmenu:hover{
+        color: rosybrown;
+        span{
+            display: inline;
+            padding-left: 10px;
+        }
+    }
+}
+.forbes{
+    
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    p{
+        cursor: pointer;
+        font-size: 40px;
+        color: white;
+        font-weight: bold;
+    }
+    
+}
+.search{
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: right;
+    i{
+        cursor: pointer;
+        font-size: 20px;
+        margin-left:40px ;
+        background-color: inherit;
+        color: white;
+        
+    }
+
+}
+.menu{
+    float: left;
+    top: 30px;
+    z-index: 10;
+    
+    background-color: rgb(78, 63, 63);
+    width: 200px;
+    position: inherit;
+    
+    a{  
+        display: block;
+        font-size: 20px;
+        margin-bottom: 20px;
+        padding-left: 10px;
+        text-decoration: none;
+        color: white;
+    }
+}
+
+
+.dropdown{
+    margin: auto;
+    width: 90%;
+    margin-top: 30px;
+    
+}
+.underline{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+.contentBtn{
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    font-size: 12px;
+}
+.drop-click{
+    background-color: rgb(197, 191, 191);
+    position: absolute;
+    z-index: 5;
+    margin-top: 2px;
+    width: 200px;
+    box-shadow: -5px 5px 10px rgb(143, 140, 140) , -5px -5px 10px white, 5px 5px 10px rgb(143, 140, 140) , 5px 5px 10px rgb(143, 140, 140);
+    
+}
+.dropdown-content{
+    display: block;
+    margin-bottom: 20px;
+    margin: auto;
+    padding: 10px;
+    border-bottom: rgb(95, 93, 93) 1px solid;
+    cursor: pointer;
+    font-size: 12px;
+
+}
+.main{
+    width: 90%;
+    margin: auto;
+    margin-top: 35px;
+    display: block;
+
+}
+.right{
+    margin: left 20px;
+}
+.quote{
+    height: 200px;
+    display: inline-block;
+    width: 100%;
+}
+.underquote{
+    margin-top: 80px;
+}
+@media screen and (max-width :768px){
+    .wraper{
+        
+        max-width: 768px;
+        display: grid;
+        grid-template-rows: 50px 20px 1200px;
+        grid-template-columns: 1fr;
+        overflow-x: hidden;
+        grid-auto-rows: 200px;
+        grid-row-gap: 20px;
+        
+    }
+    .navbar{
+        position: relative;
+        width: 100%;
+        grid-template-columns: 1fr;
+        z-index: 10;
+        margin-top: 0px;
+    }
+    .nav{
+        display: grid;
+        grid-template-columns: 30px 60px 1fr 1fr  ;
+        background-color: black;
+        overflow: hidden;
+        position:fixed ;
+        width: 100%;
+    
+    }
+    .btn{
+        text-decoration: none;
+        grid-column: 1/2;
+    
+        span{
+            
+            display: none;
+            font-size: 10px;
+            color: white;
+        }
+        .btnmenu {
+            cursor: pointer;
+            font-size: 15px;
+            background-color: black;
+            border: none;
+            color: white;
+        }
+        .explore{
+            display: none;
+            opacity: 0;
+        }
+
+    }
+    .forbes{
+        grid-column: 2/3;
+        text-align: center;
+        text-decoration: none;
+        font-size: 5px;        
+        color: black;
+        p{
+            cursor: pointer;
+            font-size: 15px;
+            color: white;
+            font-weight: bold;
+        }
+        
+    }
+    .search{
+        grid-column: 4/5;
+        text-align: center;
+        grid-template-columns: 1fr 1fr;
+        text-decoration: none;
+        i{
+            cursor: pointer;
+            font-size: 10px;
+            background-color: inherit;
+            color: white;
+            
+        }
+    
+    }
+    .menu{
+        
+        top: 40px;
+        z-index: 10;
+        
+        background-color: rgb(78, 63, 63);
+        width: 100%;
+        height: 100%;
+        position: inherit;
+        
+        a{  
+            display: block;
+            font-size: 15px;
+            margin-bottom: 20px;
+            padding-left: 10px;
+            text-decoration: none;
+            color: white;
+        }
+    }
+    .dropdown{
+        margin-left: 0px;
+        grid-row: 2/3;
+    }
+    .main{
+        margin-left: 0px;
+        grid-column: 1/2;
+        grid-row: 3/4;
+        min-width: 80%;
+    }
+    
+
+}
+

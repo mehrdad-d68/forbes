@@ -1,0 +1,21 @@
+<div class="container">
+
+    <div class="left" (click)='left()'>
+        <i class="fa fa-arrow-left" aria-hidden="true"></i>
+    </div>
+    <div class="row"  >
+        <div class="breaking">
+            <p>BREAKING</p>
+        </div>
+        <div [@next]=' t ? "next":"before"' *ngFor="let break of breakingnews;index as i" class="column">
+            <div *ngIf='i!=0' class="line"></div>
+            <p class='time'>{{break.time}}</p>
+            <p style="cursor: pointer;">{{break.description}}</p>
+            
+
+        </div>
+    </div>
+    <div class="right" (click)='right()'>
+        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+.container{
+    margin-top: 25px;
+
+}
+.border{
+    width: 90%;
+    border: 8px solid rgb(170, 148, 148);
+    margin: auto;
+    height: 175px;
+}
+.day{
+    font-size: 25px;
+    background-color: #fff;
+    padding: 10px;
+    margin:auto;
+    margin-top: -25px;
+    width: fit-content;
+}
+.quote{
+    width: 80%;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+    margin-top: 10px;
+    font-weight:bold;
+    display: block;
+}
+.share{
+   
+    text-align: center;
+    font-size: 12px;
+    color: rgb(58, 55, 55);
+
+}
+.share2{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+}
+.line{
+    margin:10px;
+    height: 5px;
+    background-color: black;
+}

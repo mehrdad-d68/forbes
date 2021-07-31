@@ -1,0 +1,25 @@
+<div class="vertical">
+    <div (click)='shownews(1)' [class.unselected]='news===false'  class="popular">
+        <p>Popular</p>
+        
+    </div>
+
+
+    <div (click)='shownews(2)' [class.unselected]='news===true' class="editors">
+        <p>Editors Picks</p>
+    </div>
+    
+    <div *ngIf='news' class='if' >
+      <div *ngFor='let popular of pop' class='ex1' >
+          <p class='des'>{{popular.description}}</p>
+      </div>  
+    </div>
+    <div *ngIf='!news' class='if' >
+        <div *ngFor='let edit of edits' class='ex' >
+            <p class="time">{{edit.time}}</p>
+            <p class='des'>{{edit.description}}</p>
+            <p class="by"> By  <span class="by2">{{edit.by}}</span> </p>
+        </div>  
+      </div>
+
+</div>
